@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   facebook: {
     color: '#4267B2',
     fontWeight: 'bold',
-    fontSize: 15
+    fontSize: 13
   },
   facebookButton: {
     margin: 10,
