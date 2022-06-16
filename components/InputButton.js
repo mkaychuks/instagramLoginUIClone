@@ -1,18 +1,22 @@
-import { React } from 'react';
+import { React, useState } from 'react';
 import { StyleSheet } from 'react-native';
 import { TextInput } from 'react-native-paper';
 
 
 
 const InputField = (props) => {
+    const [value, setvalue] = useState('')
+
     // props for this component
     const { placeholder, secureTextEntry } = props
     return (
-        <TextInput 
+        <TextInput
+            value={value}
             placeholder= {placeholder}
             mode='outlined'
             style={styles.textInput}
             secureTextEntry={secureTextEntry}
+            onChangeText={(value)=>setvalue(value)}
         />
     )
 }
