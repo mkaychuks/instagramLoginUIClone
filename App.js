@@ -31,14 +31,7 @@ export default function App() {
     //   {/* the button*/}  
     //   <Button />
 
-    //   <View style={styles.subtitle}>
-    //     <Text style={styles.loginHelp}>
-    //       Forgot your login details?&nbsp;
-    //     </Text>
-    //     <Text style={styles.getHelp}>
-    //       Get help logging in
-    //     </Text>
-    //   </View>
+    //   
 
 
     //   <View style={styles.options}>
@@ -76,20 +69,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   
-  subtitle: {
-    flexDirection: 'row',
-    alignContent: 'center',
-    justifyContent: 'center'
-  },
-  loginHelp: {
-    fontSize: 10,
-    fontWeight: '200',
-    color: '#808080',
-  },
-  getHelp: {
-    fontSize: 10,
-    fontWeight: '600'
-  }, 
+   
   options: {
     flexDirection: 'row',
     width: 280,
