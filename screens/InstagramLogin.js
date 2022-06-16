@@ -2,6 +2,7 @@ import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 
 import InputField from '../components/InputButton'
+import Button from '../components/Button'
 
 
 const InstagramLogin = () => {
@@ -13,6 +14,7 @@ const InstagramLogin = () => {
       />
       <InputField placeholder={"Phone number, email or username"} />
       <InputField placeholder={"Password"} secureTextEntry={true} />
+      <Button />
       <Text>InstagramLogin</Text>
     </View>
   )
