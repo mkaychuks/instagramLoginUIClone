@@ -34,13 +34,7 @@ export default function App() {
     //   
 
 
-    //   <View style={styles.options}>
-    //     <View style={styles.spacer}></View>
-    //     <Text style={styles.option}>
-    //       OR
-    //     </Text>
-    //     <View style={styles.spacer}></View>
-    //   </View>
+
 
 
     //   <Pressable style={styles.facebookButton}>
@@ -70,18 +64,7 @@ const styles = StyleSheet.create({
   },
   
    
-  options: {
-    flexDirection: 'row',
-    width: 280,
-    margin: 8,
-    alignItems: 'center',
-    justifyContent: 'space-evenly'
-  },
-  spacer: {
-    backgroundColor: '#808080',
-    width: 120,
-    height: 1
-  },
+  
   option: {
     color: '#808080',
     fontSize: 15

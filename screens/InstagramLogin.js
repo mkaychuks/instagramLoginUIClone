@@ -18,6 +18,11 @@ const InstagramLogin = () => {
         <Text style={styles.loginHelp}>Forgot your login details?&nbsp;</Text>
         <Text style={styles.getHelp}>Get help logging in</Text>
       </View>
+      <View style={styles.options}>
+        <View style={styles.spacer}></View>
+        <Text style={styles.option}>OR</Text>
+        <View style={styles.spacer}></View>
+      </View>
     </View>
   );
 };
@@ -36,18 +41,30 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   subtitle: {
-    flexDirection: 'row',
-    alignContent: 'center',
-    justifyContent: 'center'
+    flexDirection: "row",
+    alignContent: "center",
+    justifyContent: "center",
   },
   loginHelp: {
     fontSize: 10,
-    fontWeight: '200',
-    color: '#808080',
+    fontWeight: "200",
+    color: "#808080",
   },
   getHelp: {
     fontSize: 10,
-    fontWeight: '600'
+    fontWeight: "600",
+  },
+  options: {
+    flexDirection: 'row',
+    width: 280,
+    margin: 8,
+    alignItems: 'center',
+    justifyContent: 'space-evenly'
+  },
+  spacer: {
+    backgroundColor: '#808080',
+    width: 120,
+    height: 1
   },
 });
 
