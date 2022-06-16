@@ -37,9 +37,7 @@ export default function App() {
 
 
 
-    //   <Pressable style={styles.facebookButton}>
-    //         <Text style={styles.facebook}>Log in with Facebook</Text>
-    //   </Pressable>
+
 
     //   <View style={[styles.subtitle, {position: 'absolute', bottom: 5}]}>
     //     <Text style={styles.loginHelp}>
@@ -69,12 +67,5 @@ const styles = StyleSheet.create({
     color: '#808080',
     fontSize: 15
   },
-  facebook: {
-    color: '#4267B2',
-    fontWeight: 'bold',
-    fontSize: 13
-  },
-  facebookButton: {
-    margin: 10,
-  }
+  
 });

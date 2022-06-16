@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import React from "react";
 
 import InputField from "../components/InputButton";
@@ -23,6 +23,9 @@ const InstagramLogin = () => {
         <Text style={styles.option}>OR</Text>
         <View style={styles.spacer}></View>
       </View>
+      <Pressable style={styles.facebookButton}>
+        <Text style={styles.facebook}>Log in with Facebook</Text>
+      </Pressable>
     </View>
   );
 };
@@ -55,16 +58,24 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   options: {
-    flexDirection: 'row',
+    flexDirection: "row",
     width: 280,
     margin: 8,
-    alignItems: 'center',
-    justifyContent: 'space-evenly'
+    alignItems: "center",
+    justifyContent: "space-evenly",
   },
   spacer: {
-    backgroundColor: '#808080',
+    backgroundColor: "#808080",
     width: 120,
-    height: 1
+    height: 1,
+  },
+  facebook: {
+    color: "#4267B2",
+    fontWeight: "bold",
+    fontSize: 13,
+  },
+  facebookButton: {
+    margin: 10,
   },
 });
 
