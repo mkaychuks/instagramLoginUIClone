@@ -26,6 +26,10 @@ const InstagramLogin = () => {
       <Pressable style={styles.facebookButton}>
         <Text style={styles.facebook}>Log in with Facebook</Text>
       </Pressable>
+      <View style={[styles.subtitle, { position: "absolute", bottom: 5 }]}>
+        <Text style={styles.loginHelp}>Don't have an account?&nbsp;</Text>
+        <Text style={styles.getHelp}>Sign up</Text>
+      </View>
     </View>
   );
 };
@@ -63,6 +67,10 @@ const styles = StyleSheet.create({
     margin: 8,
     alignItems: "center",
     justifyContent: "space-evenly",
+  },
+  option: {
+    color: "#808080",
+    fontSize: 15,
   },
   spacer: {
     backgroundColor: "#808080",
