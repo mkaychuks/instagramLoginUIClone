@@ -12,18 +12,16 @@ export default function App() {
 
     <PaperProvider>
       <SafeAreaView style={styles.container}>
+        <StatusBar style="auto" />
         <InstagramLogin />
       </SafeAreaView>
     </PaperProvider>
 
 
     // <View style={styles.container}>
-    //   <StatusBar style="auto" />
+    //   
     //   {/* the Instagram Logo*/}
-    //   <Image 
-    //     style={styles.image}
-    //     source={require('./assets/Instagram_logo.png')}
-    //   />
+    //   
     //   {/* the Input field*/}
     //   <InputField 
     //     placeholder={"Phone number, email or password"}
@@ -77,12 +75,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  image: {
-    width: 200,
-    height: 50,
-    resizeMode: 'contain',
-    margin: 8
-  },
+  
   subtitle: {
     flexDirection: 'row',
     alignContent: 'center',
