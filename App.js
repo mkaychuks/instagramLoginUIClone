@@ -1,61 +1,72 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Pressable} from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable, SafeAreaView} from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
 
 import InputField from './components/InputButton';
 import Button from './components/Button';
+import InstagramLogin from './screens/InstagramLogin';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      {/* the Instagram Logo*/}
-      <Image 
-        style={styles.image}
-        source={require('./assets/Instagram_logo.png')}
-      />
-      {/* the Input field*/}
-      <InputField 
-        placeholder={"Phone number, email or password"}
-        keyboardType={'email-address'}
-      />
-      <InputField placeholder={"Password"}/>
-      {/* the button*/}  
-      <Button />
 
-      <View style={styles.subtitle}>
-        <Text style={styles.loginHelp}>
-          Forgot your login details?&nbsp;
-        </Text>
-        <Text style={styles.getHelp}>
-          Get help logging in
-        </Text>
-      </View>
+    <PaperProvider>
+      <SafeAreaView style={styles.container}>
+        <InstagramLogin />
+      </SafeAreaView>
+    </PaperProvider>
 
 
-      <View style={styles.options}>
-        <View style={styles.spacer}></View>
-        <Text style={styles.option}>
-          OR
-        </Text>
-        <View style={styles.spacer}></View>
-      </View>
+    // <View style={styles.container}>
+    //   <StatusBar style="auto" />
+    //   {/* the Instagram Logo*/}
+    //   <Image 
+    //     style={styles.image}
+    //     source={require('./assets/Instagram_logo.png')}
+    //   />
+    //   {/* the Input field*/}
+    //   <InputField 
+    //     placeholder={"Phone number, email or password"}
+    //     keyboardType={'email-address'}
+    //   />
+    //   <InputField placeholder={"Password"}/>
+    //   {/* the button*/}  
+    //   <Button />
+
+    //   <View style={styles.subtitle}>
+    //     <Text style={styles.loginHelp}>
+    //       Forgot your login details?&nbsp;
+    //     </Text>
+    //     <Text style={styles.getHelp}>
+    //       Get help logging in
+    //     </Text>
+    //   </View>
 
 
-      <Pressable style={styles.facebookButton}>
-            <Text style={styles.facebook}>Log in with Facebook</Text>
-      </Pressable>
-
-      <View style={[styles.subtitle, {position: 'absolute', bottom: 5}]}>
-        <Text style={styles.loginHelp}>
-          Don't have an account?&nbsp;
-        </Text>
-        <Text style={styles.getHelp}>
-          Sign up
-        </Text>
-      </View>
+    //   <View style={styles.options}>
+    //     <View style={styles.spacer}></View>
+    //     <Text style={styles.option}>
+    //       OR
+    //     </Text>
+    //     <View style={styles.spacer}></View>
+    //   </View>
 
 
-    </View>
+    //   <Pressable style={styles.facebookButton}>
+    //         <Text style={styles.facebook}>Log in with Facebook</Text>
+    //   </Pressable>
+
+    //   <View style={[styles.subtitle, {position: 'absolute', bottom: 5}]}>
+    //     <Text style={styles.loginHelp}>
+    //       Don't have an account?&nbsp;
+    //     </Text>
+    //     <Text style={styles.getHelp}>
+    //       Sign up
+    //     </Text>
+    //   </View>
+
+
+    // </View>
   );
 }
 
